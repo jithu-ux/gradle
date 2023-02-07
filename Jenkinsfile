@@ -4,7 +4,7 @@ pipeline{
         VERSION = "${env.BUILD_ID}"
     }
     stages{
-        stage("sonar quality check"){
+        stage("sonar quality check") {
             docker {
                 any {
                     image 'openjdk:11'
